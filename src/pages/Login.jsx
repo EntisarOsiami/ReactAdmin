@@ -53,7 +53,9 @@ function Login() {
         text: 'Welcome back!',
         icon: 'success',
       });
-      navigate('/');
+      if (userFound.type === 'admin') {
+        navigate('/admin');}else {
+      navigate('/');}
     } catch (error) {
       console.error('Login error:', error);
       setErrorMessage('An error occurred while logging in');

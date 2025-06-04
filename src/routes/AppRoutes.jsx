@@ -3,7 +3,7 @@ import HomePage from '../pages/HomePage';
 import Layout from '../layout/Layout';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-
+import AdminPage from '../pages/AdminPAge';
 function AppRoutes() {
   const AppRoutes = createBrowserRouter([
     {
@@ -21,6 +21,10 @@ function AppRoutes() {
         {
           path: 'register',
           element: <Register />,
+        },
+        {
+          path: 'admin',
+          element: <AdminPage />,
         },
       ],
     },
